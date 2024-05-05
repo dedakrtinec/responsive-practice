@@ -1,0 +1,170 @@
+:root{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --text-color: rgba(82, 82, 91, 1);
+  font-family: "Inter", sans-serif;
+}
+
+html{
+  width: 100%;
+}
+
+body{
+  padding: 0 1em;
+}
+
+header{
+  max-width: 100%;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+header img{
+ max-width: 100px;
+ cursor: pointer;
+}
+
+header svg{
+  display: none;
+  cursor: pointer;
+}
+
+.logo-container, .header-nav, .header-login{
+width: 33%
+}
+.header-nav, .header-login{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.header-nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-login ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signup-button{
+  margin-left: 3em;
+  background-color: black;
+  color: white;
+  padding: 0.8em 2em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+
+.header-nav ul li, .header-login ul li{
+  list-style-type: none;
+}
+
+main{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+main p{
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1em;
+}
+
+h1{
+  font-size: 3rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 0.6em;
+}
+
+h1 span{
+  background: linear-gradient(to right, #FF00B8 0%, #8F00FF 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+button{
+  display: block;
+  margin: auto auto;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1.1rem;
+  padding: 0.8em 2em;
+  margin-bottom: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+}
+
+.main-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  margin-bottom: 4em;
+  color: var(--text-color);
+
+}
+
+.vertical-line{
+  width: 1px;
+  background: var(--text-color);
+  height: 1.2rem;
+  margin: 0 1em;
+}
+
+.image-container{
+  min-height: 400px;
+  max-height: 100%;
+  min-width: 300px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20em;
+}
+
+.image-container img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 1150px) {
+  .header-nav, .header-login{
+    display: none;
+  }
+  header svg{
+    display: block;
+  }
+  body{
+    padding: 0 1em;
+  }
+  h1{
+    font-size: 2.6rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0.6em;
+  }
+  
+  
+}
